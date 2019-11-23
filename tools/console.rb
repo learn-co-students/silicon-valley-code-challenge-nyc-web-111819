@@ -18,6 +18,17 @@ vc1 = VentureCapitalist.new("Elon Musk", 5000000000)
 vc2 = VentureCapitalist.new("Citi Bank", 80000000000)
 vc3 = VentureCapitalist.new("TD Bank", 750000000)
 
+fr1 = FundingRound.new(startup1, vc1, "Angel", -105000)
+fr2 = FundingRound.new(startup1, vc2, "Seed", 400000)
+fr3 = FundingRound.new(startup2, vc1, "Angel", 500000)
+fr4 = FundingRound.new(startup2, vc1, "Pre-Seed", 35000)
+fr5 = FundingRound.new(startup3, vc3, "Angel", 37000)
+fr6 = FundingRound.new(startup3, vc2, "Series A", 235000)
+fr7 = FundingRound.new(startup3, vc1, "Series B", 804800)
+fr8 = FundingRound.new(startup4, vc3, "Angel", 23000)
+fr9 = FundingRound.new(startup5, vc3, "Angel", 199400)
+
+
 
 
 

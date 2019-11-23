@@ -1,9 +1,19 @@
 class FundingRound
-    attr_accessor
+    attr_accessor :type, :investment
+    attr_reader :startup, :venture_capitalist
 
     @@all = []
-    def initialize
+    def initialize(startup, venture_capitalist, type, investment)
+        @startup = startup
+        @venture_capitalist = venture_capitalist
+        @type = type
+        @investment = investment.abs
 
+        @@all << self
+    end
+
+    def self.all
+        @@all
     end
 
 end
